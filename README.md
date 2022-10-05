@@ -6,7 +6,7 @@ Refactoring VBA code for efficiencies with larger volumes of data
 Refactor (or edit) the VBA code developed during the Module lessons to loop through the data one time to collect the same information and then measure the run time of the refactored code compared to the original code
 
 ### Description
-For clarity, I will be referring to the code developed while doing the Module as the "original code" and the refactored code as the "refactored code". Likewise, I will refer to the run time for the original code as "OC2018" and the run time "RF2018".
+For clarity, I will be referring to the code developed while doing the Module as the "original code" and the refactored code as the "refactored code". 
 
 ## Refactoring Process
 From a high level view, both sets of code produce the same results: a list of stock tickers with their total daily volume for a given year and the percent return for that year. The percentage return is column is conditionally formatted to quickly show positive and negative returns by color - green or red, respectively.
@@ -18,9 +18,12 @@ In the refactored code, the same identification, collection, calculation, and ou
 The two sets of code are included at the bottom of this file as OriginalCode and Refactored code.
 
 ## Results
-Both sets of code include a timer for the processing time that shows in a message box when the run is complete.elow are two images for each code showing the processing time. Note that the stock analysis values are identical in all of the images, meaning that the original code and the refactored code produce the same results.
+Both sets of code include a timer for the processing time that shows in a message box when the run is complete. Below are two images for each code (original first, then refactored) showing the processing time. Note that the stock analysis values are identical in all of the images, meaning that the original code and the refactored code produce the same results.
+Original code:
 ![Run Time for 2018 using Original Code 1](https://github.com/bnidam/Stock-analysis/blob/main/Resources/2018RunTime_AllStocksAnalysis.png)
 ![Run Time for 2018 using Original Code 2](https://github.com/bnidam/Stock-analysis/blob/main/Resources/2018RunTime_AllStocksAnalysis2.png)
+
+Refactored code:
 ![Run Time for 2018 using Refactored Code 1](https://github.com/bnidam/Stock-analysis/blob/main/Resources/2018RunTime_AllStocksAnalysisRefactored.png)
 ![Run Time for 2018 using Refactored Code 2](https://github.com/bnidam/Stock-analysis/blob/main/Resources/2018RunTime_AllStocksAnalysisRefactored2.png)
 
@@ -42,6 +45,7 @@ There are many scenarios were refactoring code could be beneficial:
 ## Code
 Below is the original code section that is changed during refactoring.
 ![original code](https://github.com/bnidam/Stock-analysis/blob/main/Resources/OriginalCode.png)
+
 Below is the refactored code.
 ![refactored code](https://github.com/bnidam/Stock-analysis/blob/main/Resources/RefactoredCode.png)
 
